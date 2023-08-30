@@ -16,6 +16,7 @@
 		00C00BEF2A9D94E60041E7A0 /* QuizzAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C00BEE2A9D94E60041E7A0 /* QuizzAppTests.swift */; };
 		00C00BF92A9D94E60041E7A0 /* QuizzAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C00BF82A9D94E60041E7A0 /* QuizzAppUITests.swift */; };
 		00C00BFB2A9D94E60041E7A0 /* QuizzAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C00BFA2A9D94E60041E7A0 /* QuizzAppUITestsLaunchTests.swift */; };
+		00C00C082A9FE3F50041E7A0 /* QuizzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C00C072A9FE3F50041E7A0 /* QuizzViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		00C00BF42A9D94E60041E7A0 /* QuizzAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizzAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C00BF82A9D94E60041E7A0 /* QuizzAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzAppUITests.swift; sourceTree = "<group>"; };
 		00C00BFA2A9D94E60041E7A0 /* QuizzAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00C00C072A9FE3F50041E7A0 /* QuizzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				00C00BE02A9D94E60041E7A0 /* Assets.xcassets */,
 				00C00BE22A9D94E60041E7A0 /* LaunchScreen.storyboard */,
 				00C00BE52A9D94E60041E7A0 /* Info.plist */,
+				00C00C072A9FE3F50041E7A0 /* QuizzViewController.swift */,
 			);
 			path = QuizzApp;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				00C00BDC2A9D94E50041E7A0 /* ViewController.swift in Sources */,
 				00C00BD82A9D94E50041E7A0 /* AppDelegate.swift in Sources */,
+				00C00C082A9FE3F50041E7A0 /* QuizzViewController.swift in Sources */,
 				00C00BDA2A9D94E50041E7A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

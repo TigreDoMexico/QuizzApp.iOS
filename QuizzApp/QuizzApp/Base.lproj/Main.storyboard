@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AIS-UR-iB7">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -64,14 +65,87 @@
                     <view key="view" contentMode="scaleToFill" id="j3H-Lp-RFm">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto da Questao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXj-0o-RQS">
+                                <rect key="frame" x="62" y="215" width="306" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrN-y7-O0M">
+                                <rect key="frame" x="64" y="326" width="302" height="62"/>
+                                <color key="backgroundColor" red="0.45490196078431372" green="0.19607843137254902" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="i56-ZW-CGM"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickAnswerButton:" destination="wPS-HT-mJM" eventType="touchUpInside" id="Oj4-yn-sJd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amH-JC-Mhe">
+                                <rect key="frame" x="64" y="420" width="302" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Xje-01-ejp"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 02">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickAnswerButton:" destination="wPS-HT-mJM" eventType="touchUpInside" id="hq8-3Y-99c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Won-d1-i8a">
+                                <rect key="frame" x="64" y="514" width="302" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="qgg-Pk-0lR"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 03">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickAnswerButton:" destination="wPS-HT-mJM" eventType="touchUpInside" id="is2-F4-Dqu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hne-rw-K6c"/>
                         <color key="backgroundColor" red="0.32156862745098036" green="0.11764705882352941" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dXj-0o-RQS" firstAttribute="top" secondItem="hne-rw-K6c" secondAttribute="top" constant="112" id="CWC-bG-Kx9"/>
+                            <constraint firstItem="Won-d1-i8a" firstAttribute="leading" secondItem="hne-rw-K6c" secondAttribute="leading" constant="64" id="KBy-AE-0zU"/>
+                            <constraint firstItem="hne-rw-K6c" firstAttribute="trailing" secondItem="hrN-y7-O0M" secondAttribute="trailing" constant="64" id="Lgw-kR-fNk"/>
+                            <constraint firstItem="amH-JC-Mhe" firstAttribute="leading" secondItem="hne-rw-K6c" secondAttribute="leading" constant="64" id="M3P-1J-WDU"/>
+                            <constraint firstItem="hrN-y7-O0M" firstAttribute="top" secondItem="dXj-0o-RQS" secondAttribute="bottom" constant="72" id="MYq-JG-APi"/>
+                            <constraint firstItem="hrN-y7-O0M" firstAttribute="leading" secondItem="hne-rw-K6c" secondAttribute="leading" constant="64" id="XsU-bS-nwc"/>
+                            <constraint firstItem="dXj-0o-RQS" firstAttribute="leading" secondItem="hne-rw-K6c" secondAttribute="leading" constant="62" id="eOm-xq-t3J"/>
+                            <constraint firstItem="hne-rw-K6c" firstAttribute="trailing" secondItem="Won-d1-i8a" secondAttribute="trailing" constant="64" id="gyF-GA-aHf"/>
+                            <constraint firstItem="amH-JC-Mhe" firstAttribute="top" secondItem="hrN-y7-O0M" secondAttribute="bottom" constant="32" id="hAL-bk-E0f"/>
+                            <constraint firstItem="hne-rw-K6c" firstAttribute="trailing" secondItem="amH-JC-Mhe" secondAttribute="trailing" constant="64" id="l9k-Yx-n0N"/>
+                            <constraint firstItem="hne-rw-K6c" firstAttribute="trailing" secondItem="dXj-0o-RQS" secondAttribute="trailing" constant="62" id="oEF-C7-8fL"/>
+                            <constraint firstItem="Won-d1-i8a" firstAttribute="top" secondItem="amH-JC-Mhe" secondAttribute="bottom" constant="32" id="rQP-1O-Av1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="elQ-9W-Gur"/>
+                    <connections>
+                        <outlet property="QuizzTitle" destination="dXj-0o-RQS" id="In4-Wi-5z1"/>
+                        <outletCollection property="AnswersButtons" destination="hrN-y7-O0M" collectionClass="NSMutableArray" id="vKk-an-HG1"/>
+                        <outletCollection property="AnswersButtons" destination="amH-JC-Mhe" collectionClass="NSMutableArray" id="z3r-Uv-GDg"/>
+                        <outletCollection property="AnswersButtons" destination="Won-d1-i8a" collectionClass="NSMutableArray" id="VRt-bN-z7N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxL-lk-OKi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1811" y="3"/>
+            <point key="canvasLocation" x="1809.7674418604652" y="2.5751072961373391"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="syU-OM-kub">
@@ -96,6 +170,9 @@
         <image name="Logo" width="217" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

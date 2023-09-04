@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		009D77B72AA57F1700629AC0 /* Quizz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D77B62AA57F1700629AC0 /* Quizz.swift */; };
+		009D77BA2AA648B400629AC0 /* QuizzService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D77B92AA648B400629AC0 /* QuizzService.swift */; };
 		00C00BD82A9D94E50041E7A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C00BD72A9D94E50041E7A0 /* AppDelegate.swift */; };
 		00C00BDA2A9D94E50041E7A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C00BD92A9D94E50041E7A0 /* SceneDelegate.swift */; };
 		00C00BDC2A9D94E50041E7A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C00BDB2A9D94E50041E7A0 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		009D77B62AA57F1700629AC0 /* Quizz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizz.swift; sourceTree = "<group>"; };
+		009D77B92AA648B400629AC0 /* QuizzService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzService.swift; sourceTree = "<group>"; };
 		00C00BD42A9D94E50041E7A0 /* QuizzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C00BD72A9D94E50041E7A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00C00BD92A9D94E50041E7A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		009D77B82AA648A400629AC0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				009D77B92AA648B400629AC0 /* QuizzService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		00C00BCB2A9D94E50041E7A0 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		00C00BD62A9D94E50041E7A0 /* QuizzApp */ = {
 			isa = PBXGroup;
 			children = (
+				009D77B82AA648A400629AC0 /* Services */,
 				009D77B52AA57F0500629AC0 /* Models */,
 				00C00BD72A9D94E50041E7A0 /* AppDelegate.swift */,
 				00C00BD92A9D94E50041E7A0 /* SceneDelegate.swift */,
@@ -277,6 +288,7 @@
 				00C00C082A9FE3F50041E7A0 /* QuizzViewController.swift in Sources */,
 				00C00BDA2A9D94E50041E7A0 /* SceneDelegate.swift in Sources */,
 				009D77B72AA57F1700629AC0 /* Quizz.swift in Sources */,
+				009D77BA2AA648B400629AC0 /* QuizzService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

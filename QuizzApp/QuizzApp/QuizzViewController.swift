@@ -9,8 +9,7 @@ import UIKit
 
 class QuizzViewController: UIViewController {
     
-    var score = 0
-    var quizzCurrent = 0
+    var service = QuizzService()
     
     @IBOutlet weak var QuizzTitle: UILabel!
     @IBOutlet var AnswersButtons: [UIButton]!
@@ -22,14 +21,10 @@ class QuizzViewController: UIViewController {
     }
     
     @IBAction func onClickAnswerButton(_ sender: UIButton) {
-        let currentQuizz = quizzes[quizzCurrent]
-        
-        if sender.tag == currentQuizz.correta {
-            score += 1
+        service.UpdateScoreByOptionSelected(sender.tag)
+        if service.GoToNextQuizz() {
+            configureQuizz()
         }
-        
-        quizzCurrent += 1
-        configureQuizz()
     }
     
     func configureLayout() {
@@ -42,7 +37,7 @@ class QuizzViewController: UIViewController {
     }
     
     func configureQuizz() {
-        let currentQuizz = quizzes[quizzCurrent]
+        let currentQuizz = service.GetCurrentQuizz()
         
         QuizzTitle.text = currentQuizz.titulo
         

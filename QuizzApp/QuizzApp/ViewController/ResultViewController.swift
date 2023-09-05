@@ -37,8 +37,6 @@ class ResultViewController: UIViewController {
             .replacingOccurrences(of: "{score}", with: String(_score))
             .replacingOccurrences(of: "{total}", with: String(_total))
         
-        print(_percentage)
-        
         scoreResultLabel.text = scoreText
         
         let percentageText = scorePercentageLabel.text?

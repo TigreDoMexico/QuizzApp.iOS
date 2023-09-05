@@ -11,10 +11,6 @@ class QuizzViewController: UIViewController {
     
     var service = QuizzService()
     
-    var defaultColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
-    var correctColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1.0)
-    var wrongColor = UIColor(red: 211/255, green: 17/255, blue: 17/255, alpha: 1.0)
-    
     @IBOutlet weak var QuizzTitle: UILabel!
     @IBOutlet var AnswersButtons: [UIButton]!
     
@@ -38,9 +34,9 @@ class QuizzViewController: UIViewController {
         let answerIsCorrect = service.UpdateScoreByOptionSelected(sender.tag)
         
         if answerIsCorrect {
-            sender.backgroundColor = correctColor
+            sender.backgroundColor = UIColor.correctColor
         } else {
-            sender.backgroundColor = wrongColor
+            sender.backgroundColor = UIColor.wrongColor
         }
         
         if service.GoToNextQuizz() {
@@ -68,7 +64,7 @@ class QuizzViewController: UIViewController {
             let btnTitle = currentQuizz.respostas[btn.tag]
 
             btn.setTitle(btnTitle, for: .normal)
-            btn.backgroundColor = defaultColor
+            btn.backgroundColor = UIColor.defaultColor
         }
     }
     

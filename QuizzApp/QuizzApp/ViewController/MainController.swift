@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainController: UIViewController {
 
     @IBOutlet weak var botaoQuizz: UIButton!
     
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
     
     func configuraLayout() {
+        navigationItem.hidesBackButton = true
         botaoQuizz.layer.cornerRadius = 12.0
     }
 }
